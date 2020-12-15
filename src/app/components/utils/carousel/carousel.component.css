@@ -1,0 +1,49 @@
+.carousels-wrapper {
+  overflow: hidden;
+  text-align: center;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* width: 600px; */
+}
+
+.carousels-inner {
+  display: flex;
+}
+.carousels-item {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background: transparent;
+  color: white;
+  background-color: rgba(245, 245, 245, 0.3);
+  top: 20vh;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.previous {
+  position: absolute;
+  left: 0;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+}
+
+.round {
+  border-radius: 50%;
+}

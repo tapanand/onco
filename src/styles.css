@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --mainBlue: rgb(122, 219, 255);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+}
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.component-holder {
+  padding: 2em;
+}
+
+.sm-screen {
+  display: block !important;
+}
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .card-container > *:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+  .sm-screen {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+  .sm-screen {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .sm-screen2 {
+    display: none !important;
+  }
+}
+
+.line-height-1 {
+  line-height: 1em;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.action-btn button {
+  color: var(--mainWhite);
+  font-weight: 200 !important;
+}
+
+.color-white {
+  color: var(--mainWhite);
+}
+
+.color-black {
+  color: var(--mainBlack);
+}
+
+.title-header {
+  font-size: 2em;
+}

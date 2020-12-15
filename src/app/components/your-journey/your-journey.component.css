@@ -1,0 +1,27 @@
+.bg {
+  background: transparent;
+  background-image: url("/assets/4.png");
+  background-position: 0;
+  background-repeat: repeat;
+  background-size: 100%;
+  min-height: 64vh;
+}
+
+.col {
+  min-width: 300px !important;
+  min-height: 367px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .bg {
+    background: var(--mainWhite);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}

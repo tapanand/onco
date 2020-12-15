@@ -1,0 +1,13 @@
+<section class="carousels-wrapper" [ngStyle]="carouselWrapperStyle">
+  <ul class="carousels-inner" #carouselsInner>
+    <li *ngFor="let item of items;" class="carousels-item mx-2">
+      <img  class="items" src="{{item.path}}" alt="" />
+      <span>{{item.title}}</span>
+    </li>
+  </ul>
+  <div>
+    <button (click)="next()" class="next round"> &#8250; </button>
+    <button (click)="prev()" class="previous round"> &#8249; </button>
+  </div>
+</section>
+

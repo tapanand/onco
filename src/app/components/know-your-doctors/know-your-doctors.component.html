@@ -1,0 +1,49 @@
+<div class="component-holder">
+    <h2>Know our Cancer Doctors</h2>
+    <div class="col my-4 text-center">
+        <div class="details-container container-sm row ">
+            <div class="details col my-2">
+                <img src="assets/1.png" alt="" />
+                <div class="desc pb-2 ml-2">
+                    <span class="font-weight-bold">10+ years</span>
+                    <span class="font-weight-normal l-1">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.</span>
+                </div>
+            </div>
+            <div class="details col my-2 p-2">
+                <img src="assets/2.png" alt="" />
+                <div class="desc pb-2 ml-2">
+                    <span class="font-weight-bold">10+ years</span>
+                    <span class="font-weight-normal l-1">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.</span>
+                </div>
+            </div>
+            <div class="details col my-2 p-2">
+                <img src="assets/3.png" alt="" />
+                <div class="desc pb-2 ml-2">
+                    <span class="font-weight-bold">10+ years</span>
+                    <span class="font-weight-normal l-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. jlhlh
+                        jh ldhg hgj lhasbljdgh</span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-wrapper1">
+            <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+            <mdb-carousel-item *ngFor="let item of items; let i = index">
+                <img  class="items" src="{{item.path}}" alt="" />
+                <span>{{item.title}}</span>
+            </mdb-carousel-item>
+        </mdb-carousel>
+        </div>
+
+        <!-- <div class="doc-list">
+            <app-carousel [items]="items">
+            </app-carousel>
+        </div> -->
+        <div class="action-btn py-4 ">
+            <button class="btn btn-warning btn-lg">Book priority appointment</button>
+            <a href="http://#" class="my-4">Learn more -></a>
+        </div>
+
+    </div>
+</div>
